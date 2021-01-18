@@ -2,6 +2,9 @@ body{
 
 	background-image: url("images/fond.jpg");
 	background-size:cover;
+	text-align: justify;
+	font-family: sans-serif;
+	font-weight: bold;
 
 
 	/*display: flex;
@@ -24,13 +27,54 @@ img{
 	margin-right: 45%;
 	margin-bottom: 5%;
 }
+
+.fade {
+	position: relative;
+	width: 100%;
+	min-height: 60vh;
+	top: -25px;
+	background-image: linear-gradient(0deg, transparent, black 75%);
+	z-index: 1;
+  }
+
+  .crawl {
+	position: relative;
+	top: 99999px;
+	transform-origin: 50% 100%;
+	animation: crawl 130s linear;
+  }
+
+  @keyframes crawl {
+	0% {
+	  top: -100px;
+	  transform: rotateX(20deg)  translateZ(0);
+	}
+	100% { 
+	  top: -6000px;
+	  transform: rotateX(25deg) translateZ(-2500px);
+	}
+  }
 	
+
+h1{
+
+	color: #FFC31E;
+	font-size: 26px;
+	text-align: center;
+	padding-bottom: 20px;
+
+}
+
+
+p{
+	margin-bottom:5% ;
+}
 
 .intro{
 	color: #4bd5ee;
 	margin-left: 35%;
 	margin-right: 35%;
-	margin-bottom: 2%;
+	margin-bottom: 5%;
 
 }
 
@@ -38,7 +82,7 @@ img{
 	color: #FFC31E;
 	margin-left: 35%;
 	margin-right: 35%;
-	margin-bottom: 2%;
+	margin-bottom: 5%;
 
 }
 
