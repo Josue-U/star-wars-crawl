@@ -1,0 +1,28 @@
+body{
+
+	background-image: url("images/fond.jpg");
+	background-size:cover;
+
+
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	
+}
+
+
+img{
+
+	height: 150px;
+	width: 150px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+p{
+	color: #4bd5ee;
+
+}
+
