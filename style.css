@@ -19,10 +19,26 @@ img{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	margin-left: 45%;
+	margin-right: 45%;
+	margin-bottom: 5%;
+}
 	
 
-p{
+.intro{
 	color: #4bd5ee;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-bottom: 2%;
+
+}
+
+.intro2{
+	color: #FFC31E;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-bottom: 2%;
 
 }
 
