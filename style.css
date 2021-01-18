@@ -10,6 +10,11 @@ body{
 	/*display: flex;
 	justify-content: center;
 	align-items: center;*/
+
+	width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
 	
 }
 
@@ -25,7 +30,16 @@ img{
 
 	margin-left: 45%;
 	margin-right: 45%;
-	margin-bottom: 5%;
+	margin-top: -35%;
+
+	
+    opacity: 0;
+    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-name: intro;
+    animation-timing-function: ease-out;
+
+
 }
 
 .fade {
@@ -42,16 +56,18 @@ img{
 	top: 99999px;
 	transform-origin: 50% 100%;
 	animation: crawl 130s linear;
+	animation-delay: 7s;
+
   }
 
   @keyframes crawl {
 	0% {
 	  top: -100px;
-	  transform: rotateX(20deg)  translateZ(0);
+	  transform: perspective(280px) rotateX(25deg)
 	}
 	100% { 
 	  top: -6000px;
-	  transform: rotateX(25deg) translateZ(-2500px);
+	  transform: perspective(280px) rotateX(25deg)
 	}
   }
 	
@@ -67,22 +83,54 @@ h1{
 
 
 p{
-	margin-bottom:5% ;
+	margin-bottom:10% ;
 }
 
+
+/*.a-long-time-ago {
+    /* cosmétique /
+    font-size: 32px;
+    color: #4bd5ee;
+    / Animation: Apparition et disparition progressive */
+   /* opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: a-long-time-ago;
+    animation-timing-function: ease-out;
+}*/
+
+
+
 .intro{
-	color: #4bd5ee;
+	/*color: #4bd5ee;*/
 	margin-left: 35%;
 	margin-right: 35%;
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 
+	
+    font-size: 32px;
+    color: #4bd5ee;
+
+    opacity: 0;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-name: intro;
+    animation-timing-function: ease-out;
+
+}
+
+@keyframes intro{
+    0%   { opacity: 0; }
+    20%  { opacity: 1; }
+    80%  { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 .intro2{
 	color: #FFC31E;
 	margin-left: 35%;
 	margin-right: 35%;
-	margin-bottom: 5%;
+	margin-bottom: 10%;
 
 }
 
